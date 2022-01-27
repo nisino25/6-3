@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+/*---Reset---*/
+body, h1, h2, h3, h4, h5, h6, p, address,
+ul, ol, li, dl, dt, dd, img, form, table, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 100%;
+	text-align: left;
+	list-style-type: none;
+	border-collapse: collapse;
+}
+
+textarea { font-size: 100%; vertical-align:middle;}
+img { border-style: none; display: block; }
+em{font-style: normal}
+input{line-height:auto;vertical-align:middle;}
+strong.more{color:#c30}
+a{text-decoration: underline;}
+
+html {
+}
+
+body {
+	font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+}
+
+/*クラス定義*/
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+
+.clearfix {
+	display: inline-table;
+}
+
+/* Hides from IE-mac \*/
+* html .clearfix{height: 1%;}
+*+html .clearfix{min-height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*--- ページ基本デザイン ---*/
+h1 {
+	margin: 5px 10px;
+	font-size: 20px;
+	font-weight: bold;
+}
+h2 {
+	font-size: 18px;
+	font-weight: bold;	
+}
+h2::before {
+	content: '■';
+}
+section {
+	width: 80%;
+	margin: auto;
+}
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+th,td {
+	padding: 5px;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+tr {
+	background-color: #fff;
+}
+tr:nth-child(even) {
+	background-color: #eee;
+}
+.pageback {
+	margin: 20px auto;
+	text-align: center;
+}
+.paging {
+	margin: 20px auto;
+}
+.paging a {
+	padding: 0 3px;
+	overflow-wrap: break-word;
+}
